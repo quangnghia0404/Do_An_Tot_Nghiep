@@ -1,0 +1,206 @@
+/* --------------- Top-bar------------------- */
+
+
+/* 
+.top-bar {
+    background-color: #f1f5f8;
+    min-height: 36px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar__left {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.map {
+    padding: 0 10px;
+}
+
+.phone {
+    padding: 0 10px;
+    color: red;
+    padding: 10px;
+}
+
+.top-bar ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 555px) {
+    .top-bar {
+        display: none;
+    }
+} */
+
+
+/* --------------- Header-------------------- */
+
+
+/* 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-bar {
+    min-height: 70px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-bar a {
+    text-transform: uppercase;
+    color: #555;
+}
+
+.nav-bar a:hover {
+    color: #228b22;
+}
+
+.nav-bar ul li {
+    display: inline-block;
+    opacity: 0.7;
+    padding: 0 15px;
+}
+
+#logout {
+    position: relative;
+    padding-right: 40px;
+    color: black;
+}
+
+.menu {
+    display: none;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon span {
+    background: #30afb8;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 7px;
+    font-size: 10px;
+} */
+
+.topbar {
+    background-color: #232b38;
+    padding: 12px 0px;
+    color: white;
+}
+
+.top-bar-right {
+    padding: 0 10px;
+    /* border-right: 2px solid white; */
+}
+
+.bd-none {
+    border: none;
+    padding: 0;
+}
+
+.top-bar-right a {
+    color: white;
+    font-size: 13px;
+}
+
+.top-bar-right a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: -22px;
+    padding: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+img.logoimg {
+    width: 100px;
+    height: 58px;
+}
+
+.logo-menu {
+    height: 80px;
+    line-height: 80px;
+    transition: 0.2s;
+    border-bottom: 2px solid black;
+}
+
+i.fa.fa-sign-out.ml-2.primary {
+    color: #f1ebec;
+    cursor: pointer;
+}
+
+.navbar-right .link a {
+    color: black;
+    text-decoration: none;
+    font-family: segoe ui light;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 0 2px;
+}
+
+.navbar-right ul li.link::last-child a {
+    padding: 0;
+}
+
+.phone {
+    font-family: segoe ui light;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo-menu.scrollFunction {
+    position: FIXED;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000;
+    background: white;
+    height: 80px;
+    border-bottom: 2px solid #0000009e;
+    transition: 0.2s;
+}
+
+img.carttt {
+    display: inherit;
+    transform: translateY(-4px);
+    padding-right: 4px;
+}
+
+.btn.btn-gradient.container.d-flex {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    height: 45px;
+    width: 150px;
+}
+
+.menu {
+    display: none;
+}

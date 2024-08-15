@@ -1,0 +1,187 @@
+/* .login-page {
+    max-width: 550px;
+    border: 2px solid rgb(3, 165, 206);
+    padding: 30px;
+    border-radius: 5px;
+    margin: 50px auto;
+}
+
+.login-page h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #555;
+}
+
+.login-page form input,
+.login-page form button {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 5px;
+    outline: rgb(3, 165, 206);
+    border: 1px solid rgb(3, 165, 206);
+}
+
+.login-page form .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-page form button {
+    width: 150px;
+    background: rgb(3, 165, 206);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.login-page form a {
+    color: orange;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+} */
+
+:root {
+    font-family: "Montserrat", sans-serif;
+    --primary-blue: #233975;
+}
+
+
+/* .split-screen {} */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+/* 
+a {
+    text-decoration: none;
+    color: var(--primary-blue);
+    cursor: pointer;
+} */
+
+.small {
+    text-align: center;
+    font-size: 15px;
+}
+
+.split-screen {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-login {
+    height: 200px;
+}
+
+.left-login img {
+    width: 100%;
+}
+
+.left-login,
+.right-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login h1 {
+    text-align: center;
+    color: #111;
+}
+
+.right-login .copy {
+    text-align: center;
+}
+
+.right-login .copy p {
+    margin: 1.5rem 0;
+    font-size: 20px;
+}
+
+.right-login form {
+    width: 300px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 450;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.input-container.password {
+    position: relative;
+}
+
+.input-container.password i {
+    position: absolute;
+    width: 100%;
+    top: 46px;
+}
+
+.signup-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.connect p {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+    .split-screen {
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left-login,
+    .right-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: auto;
+    }
+    .left-login img {
+        width: 100%;
+        height: 100%;
+    }
+}

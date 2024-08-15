@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.phoneDevice span {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 18px;
+}
+
+.modal-call {
+    position: fixed;
+    right: 1px;
+    bottom: 0;
+    z-index: 21474836466;
+    background-color: #34465b;
+    width: 300px;
+    padding: 20px 20px 50px 20px;
+    font-family: segoe ui light;
+    font-weight: bold;
+    transition: all 0.7s;
+    transform: translateX(320px);
+}
+
+.modal-call.active {
+    transform: translateX(0);
+}
+
+.modal-call__close {
+    text-align: right;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.modal-call__close i {
+    color: white;
+    font-size: 28px;
+}
+
+.modal-call__image {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.modal-call__image img {
+    width: 100px;
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.modal-call__title {
+    font-size: 27px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.modal-call__phone {
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    padding: 17px 0px;
+    font-weight: 700;
+    color: #8cf1a8;
+}
+
+.modal-call__phone a {
+    text-decoration: none;
+    color: #8cf1a8;
+}
+
+.modal-call__description {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    line-height: 22px;
+}
+
+.modal-call__description span {
+    margin-left: 4px;
+}
+
+.modal-call-input {
+    margin-top: 10px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 80%;
+}
+
+.modal-call-inputs {
+    margin-top: 10px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 80%;
+}
+
+::placeholder {
+    color: white;
+}
+
+.modal-call-btn {
+    background-color: #8cf1a8;
+    font-size: 8px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+}

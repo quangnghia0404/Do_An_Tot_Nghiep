@@ -1,0 +1,389 @@
+.note {
+    background: #fafafa none repeat scroll 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.note-left {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.note-right {
+    color: #b5b5b5;
+    padding-right: 30px;
+}
+
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    margin: 20px 0;
+}
+
+@import url("../utils/productItem/productItem.css");
+.delete-all {
+    text-align: right;
+    margin: 20px;
+}
+
+.delete-all input {
+    height: 25px;
+    width: 25px;
+    transform: translateY(5px);
+    margin: 0 15px;
+}
+
+.delete-all span {
+    text-transform: uppercase;
+    color: rgb(3, 165, 206);
+    letter-spacing: 1.3px;
+}
+
+.delete-all button {
+    border: 1px solid crimson;
+    padding: 0 25px;
+    color: crimson;
+    text-transform: uppercase;
+}
+
+
+/* ------------ Filters Menu ----------------- */
+
+
+/* .filter_menu {
+    width: 100%;
+    min-height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+.filter_menu select,
+input {
+    border: 1px solid #ccc;
+    outline: none;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.filter_menu input {
+    flex: 1;
+    margin: 0 10px;
+} */
+
+.filter_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-item {
+    width: 30%;
+}
+
+select {
+    word-wrap: normal;
+    width: 100%;
+}
+
+select.form-control {
+    border: none;
+    border-bottom: 2px solid #00000073;
+    /* padding-bottom: 12px; */
+    font-size: 14px;
+    font-family: segoe ui light;
+    font-weight: bold;
+}
+
+input.flex-item {
+    border: none;
+    border-bottom: 2px solid #00000073;
+    font-size: 14px;
+    font-family: segoe ui light;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 14px;
+    font-family: segoe ui light;
+    font-weight: bold;
+}
+
+input.flex-item[type="text"]::focus-visible {
+    border: none;
+}
+
+
+/* -------------------- Load More --------------- */
+
+.btn {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-gradient {
+    background-image: var(--gradient-color);
+    transition: all 0.3s;
+}
+
+.btn.btn-gradient.container.d-flex {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    /* padding: 7px;
+        height: 45px; */
+    height: 45px;
+}
+
+.btn.btn-gradient.container.d-flex button {
+    color: white;
+}
+
+
+/* .load_more button {
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    text-transform: capitalize;
+} */
+
+
+/*Import the fonts used*/
+
+@import url("https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap");
+
+/*Custom properties*/
+
+:root {
+    --dark-color: black;
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, 0.7);
+    --purple-transparent-alt: rgba(53, 10, 79, 0.5);
+    --purple-light: #8f50fb;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient( to right, var(--yellow-solid), var(--purple-light));
+    --gradient-color-alt: linear-gradient( to right, var(--purple-light), var(--yellow-solid));
+}
+
+section {
+    padding: 50px 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.grid {
+    display: grid;
+    /* Mỗi item ít nhất là 300px */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* cách đều giữa cái item là 25px */
+    grid-gap: 25px;
+    text-align: center;
+}
+
+.grid-item {
+    /* display: flex; */
+    flex-direction: column;
+    /* column nên align-items là căn theo chiều dọc */
+    align-items: center;
+    justify-content: center;
+}
+
+.featured-hotels {
+    height: 35px;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.featured-hotels::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-transparent-alt);
+    z-index: -1;
+}
+
+.hotel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.hotel-name {
+    font-size: 26px;
+}
+
+.hotel-price {
+    font-size: 18px;
+}
+
+.hotel-rating {
+    margin: 10px 0 25px;
+}
+
+.rating {
+    color: var(--yellow-solid);
+}
+
+.offer {
+    /* background: linear-gradient( to right, rgba(250, 158, 44, 0.8), rgba(143, 80, 251, 0.8)), url("./images/the_paradise_bg.jpg") bottom center no-repeat; */
+    background-size: cover;
+}
+
+.offer-content {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.discount {
+    background-color: var(--yellow-solid);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    outline: 2px solid var(--yellow-solid);
+    outline-offset: 5px;
+}
+
+.paragraph {
+    font-family: segoe ui light;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+
+/* Rooms section styles */
+
+
+/* .rooms {
+    background-color: #f2f6f9;
+} */
+
+.image-wrap {
+    width: 200px;
+    height: 180px;
+}
+
+.image-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+.rooms-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room-name {
+    font-size: 26px;
+    background-color: var(--yellow-solid);
+    color: #fff;
+    padding: 5px 2px;
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    z-index: 10;
+}
+
+.image-wrap {
+    position: relative;
+}
+
+.image-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--purple-transparent-alt); */
+}
+
+.room-price {
+    font-weight: bold;
+    color: #ffa900;
+    opacity: 0.8;
+    font-family: segoe ui light;
+    font-size: 18px;
+}
+
+.per-night {
+    color: var(--dark-color);
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.rooms-btn {
+    color: var(--dark-color);
+    padding: 0;
+    transition: color 0.5s;
+}
+
+.rooms-btn:hover {
+    color: var(--yellow-solid);
+}
+
+.btn.btn-gradient.container.d-flex {
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    height: 45px;
+    width: 150px;
+}
+
+
+/* .btn .rooms-btn {
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    display: inline-flex;
+    align-items: center;
+} */
+
+
+/* EndRooms section styles */

@@ -1,0 +1,54 @@
+.about_us {
+    display: block;
+    width: 100%;
+    min-height: 60vh;
+    background: white;
+    color: black;
+    vertical-align: middle;
+    text-align: left;
+    position: relative;
+    padding: 15px 10% 50px 10%;
+}
+
+.about_us>h2 {
+    display: block;
+    color: black;
+    font-size: 32px;
+    line-height: 31px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 0 auto 30px;
+}
+
+.about_us>span {
+    display: block;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.75;
+    margin: 20px auto 10px;
+}
+
+.about_us>p {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.75;
+    margin: 0 auto 10px;
+}
+
+.about_us>img {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.abc {
+    color: #ff09ff;
+    font-weight: bold;
+}
+
+.at {
+    color: #ff09ff;
+    font-weight: bold;
+    font-family: serif;
+}
